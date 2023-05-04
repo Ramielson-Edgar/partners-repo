@@ -1,0 +1,810 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--dark-500);
+  background-color: var(--light);
+}
+
+:root {
+  --light: #fff;
+  --blue-100: #f9faff;
+  --blue-150: #dcefff;
+  --blue-500: #42a5f5;
+  --blue-700: #008af9;
+  --blue-800: #4a89f2;
+  --blue-900: #05529e;
+  --red-100: #ffdddc;
+  --red-300: #ec5350;
+  --red-500: #e53935;
+  --green-100: #c8f3e5;
+  --green-500: #4cd7ab;
+  --green-700: #1effb8;
+  --dark-300: #939393;
+  --dark-400: #4b4b4b;
+  --dark-500: #232323;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+video,
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.section-padding {
+  padding: 70px 0;
+}
+
+.text-gradient {
+  color: var(--blue-500);
+}
+
+.btn-base {
+  display: inline-block;
+  border-radius: 5px;
+  color: var(--light);
+  border: 1px solid transparent;
+  text-transform: capitalize;
+  outline: none;
+  box-shadow: none;
+}
+.btn-base:hover {
+  transform: translateY(-8px);
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-blue-white {
+  background-color: var(--blue-500);
+}
+.btn-blue-white:hover, .btn-blue-white:focus {
+  color: var(--blue-500);
+  background-color: transparent;
+  border: 1px solid var(--blue-500);
+}
+
+.btn-green-red {
+  background-color: var(--green-500);
+}
+.btn-green-red:hover, .btn-green-red:focus {
+  color: var(--light);
+  background-color: var(--red-300);
+  border: 1px solid var(--red-300);
+}
+
+.btn-blue-red {
+  background-color: var(--blue-500);
+}
+.btn-blue-red:hover, .btn-blue-red:focus {
+  color: var(--light);
+  background-color: var(--red-300);
+  border: 1px solid var(--red-300);
+}
+
+.btn-light-blue {
+  color: var(--blue-500);
+  border: 1px solid var(--blue-500);
+}
+.btn-light-blue:hover, .btn-light-blue:focus {
+  color: var(--light);
+  background-color: var(--blue-500);
+  border: 1px solid var(--blue-500);
+}
+
+.btn-red-green {
+  color: var(--light);
+  background-color: var(--red-500);
+}
+.btn-red-green:hover, .btn-red-green:focus {
+  color: var(--light);
+  background-color: var(--green-500);
+}
+
+.btn-white-red {
+  color: #003763;
+  background-color: var(--light);
+}
+.btn-white-red:hover, .btn-white-red:focus {
+  color: var(--light);
+  background-color: var(--red-500);
+}
+
+.btn-white-green {
+  color: var(--blue-500);
+  background-color: var(--light);
+}
+.btn-white-green:hover {
+  color: var(--light);
+  background-color: var(--green-500);
+}
+
+.btn-white-blue {
+  color: var(--blue-500);
+  background-color: var(--light);
+  border: 1px solid var(--blue-500);
+}
+.btn-white-blue:hover {
+  color: var(--light);
+  background-color: var(--blue-500);
+}
+
+.btn-base-small {
+  padding: 8px 20px;
+}
+
+.btn-base-lg {
+  padding: 8px 45px;
+}
+
+.bg-blue {
+  background-color: #fdfdff;
+}
+
+.text-bold {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.partnership-programs-step__list, .partnership-programs-privilege__body-text,
+.partnership-programs-privilege__list, .partnership-programs-benefits__body-list, .partnership-programs-benefits__list, .partnership-programs-features__item-list, .partnership-programs-features__list, .partnership-programs-plans__list, .partnership-programs-award__list, .partnership-programs-advantages__list, .partnership-programs__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.partnership-programs__nav-link, .btn-base {
+  text-decoration: none;
+}
+.partnership-programs__nav-link:hover, .btn-base:hover, .partnership-programs__nav-link:focus, .btn-base:focus {
+  text-decoration: none;
+}
+
+.partnership-programs-step__item, .partnership-programs-features__item, .partnership-programs-plans__item, .partnership-programs__nav-link::after, .btn-base {
+  transition: 0.3s ease-in;
+}
+
+.partnership-programs-step__body-text, .partnership-programs-privilege__body-text, .partnership-programs-privilege__header-description, .partnership-programs-benefits__body-text, .partnership-programs-performance__header-description, .partnership-programs-features__item-list-text, .partnership-programs-award__body-name, .partnership-programs-hero__header-description {
+  color: var(--dark-400);
+}
+
+.partnership-programs-step__title, .partnership-programs-performance__header-title, .partnership-programs-features__title, .partnership-programs-plans__title {
+  font-size: clamp(1rem, 0.62rem + 1.62vw, 1.88rem);
+}
+
+.partnership-programs-step__title, .partnership-programs-privilege__header, .partnership-programs-benefits__header, .partnership-programs-features__title, .partnership-programs-plans__title {
+  margin-bottom: 50px;
+}
+
+.partnership-programs-header {
+  overflow: hidden;
+  background-color: var(--light);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.03);
+  margin-bottom: 50px;
+}
+
+.partnership-programs-header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.partnership-programs__nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partnership-programs__nav-link {
+  display: inline-block;
+  color: var(--dark-400);
+}
+
+.partnership-programs__nav-link {
+  margin: 0 16px;
+  font-size: 0.813rem;
+  position: relative;
+}
+.partnership-programs__nav-link:focus, .partnership-programs__nav-link:hover {
+  color: var(--dark-500);
+}
+
+.partnership-programs__nav-link::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 5px;
+  background-color: var(--blue-500);
+  transform: translateY(41px);
+}
+
+.partnership-programs__nav-link:focus::after,
+.partnership-programs__nav-link:hover::after {
+  width: 100%;
+  outline: none;
+}
+
+.partnership-programs-hero {
+  position: relative;
+  overflow: hidden;
+  background: url("../img/hero.png"), var(--blue-100);
+  background-repeat: no-repeat;
+  background-position: right -340px top -180px;
+  margin: 10px;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.partnership-programs-hero::before,
+.partnership-programs-hero::after {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  display: inline-block;
+  content: "";
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  border: 20px solid var(--light);
+  z-index: -1;
+}
+
+.partnership-programs-hero::before {
+  bottom: unset;
+  left: unset;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+.partnership-programs-hero__header {
+  margin-top: 90px;
+}
+
+.partnership-programs-hero__header-subscription {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--red-100);
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--red-300);
+}
+
+.partnership-programs-hero__header-title {
+  font-size: clamp(1.25rem, 0.44rem + 3.47vw, 3.13rem);
+}
+
+.partnership-programs-hero__header-description {
+  max-width: 500px;
+}
+
+.partnership-programs-hero__header > * {
+  margin-bottom: 20px;
+}
+
+.partnership-programs-advantages {
+  padding: 40px 30px;
+  border: 1px solid #E3EFFD;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 31px 47px 100px -10px rgba(0, 0, 0, 0.04);
+  margin-top: 50px;
+  border-radius: 12px;
+}
+
+.partnership-programs-advantages__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partnership-programs-advantages__body-text {
+  font-size: 0.875rem;
+}
+
+.partnership-programs-advantages__item {
+  display: flex;
+}
+
+.partnership-programs-advantages__img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  margin-right: 20px;
+  background-color: #EEF3FE;
+}
+
+.partnership-programs-award__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partnership-programs-award__item {
+  display: flex;
+}
+
+.partnership-programs-award__title {
+  margin-bottom: 50px;
+}
+
+.partnership-programs-award__body-title {
+  font-size: 0.875rem;
+}
+
+.partnership-programs-award__body-name {
+  flex-grow: 1;
+  font-size: 0.813rem;
+}
+
+.partnership-programs-award__body-text {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.partnership-programs-award__img-container {
+  margin-right: 10px;
+}
+
+.partnership-programs-award__body {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 270px;
+  border-left: 2px solid var(--blue-500);
+  padding-left: 10px;
+  height: 80px;
+}
+
+.partnership-programs-award__body-title {
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.partnership-programs-plans {
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.partnership-programs-plans::before,
+.partnership-programs-plans::after {
+  position: absolute;
+  top: -100px;
+  left: 100px;
+  display: inline-block;
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 39px solid var(--light);
+  z-index: 1;
+}
+
+.partnership-programs-plans::before {
+  bottom: -100px;
+  right: -100px;
+  top: unset;
+  left: unset;
+  width: 300px;
+  height: 300px;
+  border: 10px solid var(--light);
+}
+
+.partnership-programs-plans__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.partnership-programs-plans__item {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--light);
+  border-radius: 20px;
+  border: 1px solid #E8ECFF;
+  z-index: 1;
+}
+
+.partnership-programs-step__item:hover,
+.partnership-programs-plans__item:hover {
+  transform: translateY(-10px);
+  z-index: 2;
+  box-shadow: 37px 40px 70px -10px rgba(9, 19, 69, 0.1);
+}
+
+.partnership-programs-plans__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.partnership-programs-plans__item-header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8FAFF;
+  padding: 35px;
+}
+
+.partnership-programs-plans__price {
+  padding: 30px;
+}
+
+.partnership-programs-plans__body {
+  padding: 30px 30px 0 30px;
+}
+
+.partnership-programs-plans__item-header svg {
+  margin-right: 40px;
+}
+
+.partnership-programs-plans__body-title {
+  margin-bottom: 8px;
+}
+
+.partnership-programs-plans__body-text {
+  font-size: 0.875rem;
+  line-height: 27px;
+  color: var(--dark-400);
+  min-height: 150px;
+}
+
+.partnership-programs-plans__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.partnership-programs-plans__price-cpa,
+.partnership-programs-plans__price-up {
+  text-transform: uppercase;
+}
+
+.partnership-programs-plans__price-cpa,
+.partnership-programs-plans__price-up,
+.partnership-programs-plans__price-amount {
+  color: var(--blue-500);
+}
+
+.partnership-programs-plans__price-amount {
+  font-size: 3.5rem;
+}
+
+.partnership-programs-plans__btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px 30px;
+}
+
+.partnership-programs-plans__btn-container > .btn-white-blue {
+  margin-right: 10px;
+}
+
+.partnership-programs-plans__btn-container .btn-white-blue svg {
+  fill: var(--blue-500);
+}
+
+.partnership-programs-plans__btn-container .btn-white-blue:focus svg,
+.partnership-programs-plans__btn-container .btn-white-blue:hover svg {
+  fill: var(--light);
+}
+
+.partnership-programs-features__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.partnership-programs-features__item-list-item {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 10px;
+}
+
+.partnership-programs-features__item {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 365px;
+  border: 2px solid #E8ECFF;
+  background-color: var(--light);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.partnership-programs-features__item-header {
+  padding: 40px 40px 60px;
+  flex-grow: 1;
+}
+
+.partnership-programs-features__item-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.partnership-programs-features__item-title {
+  font-size: clamp(0.88rem, 0.71rem + 0.69vw, 1.25rem);
+  margin-bottom: 20px;
+}
+
+.partnership-programs-benefits__body-img-container,
+.partnership-programs-features__item-img-container {
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--blue-500);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.partnership-programs-features__item-img-container svg {
+  fill: var(--blue-500);
+}
+
+.partnership-programs-features__item-list-text {
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+
+.partnership-programs-features__item-body {
+  position: relative;
+  background-color: #F9FAFF;
+  min-height: 160px;
+}
+
+.partnership-programs-features__item-body::before,
+.partnership-programs-features__item-body::after {
+  position: absolute;
+  bottom: -50px;
+  right: -20px;
+  display: inline-block;
+  content: "";
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  border: 30px solid var(--light);
+  z-index: 1;
+}
+
+.partnership-programs-features__item-body::before {
+  top: -30px;
+  left: -30px;
+  border: 10px solid var(--light);
+}
+
+.partnership-programs-features__item-body img {
+  position: absolute;
+  top: -15px;
+  z-index: 2;
+}
+
+.partnership-programs-performance {
+  position: relative;
+  overflow: hidden;
+  background: url("../img/performance-bg.png"), var(--blue-100);
+  background-repeat: no-repeat;
+  background-position: center right;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.partnership-programs-performance::before,
+.partnership-programs-performance::after {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  display: inline-block;
+  content: "";
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  border: 30px solid var(--light);
+  z-index: 1;
+}
+
+.partnership-programs-performance::before {
+  top: -20px;
+  right: -20px;
+  left: unset;
+  width: 100px;
+  height: 100px;
+  border: 10px solid var(--light);
+}
+
+.partnership-programs-performance__header > * {
+  margin-bottom: 20px;
+}
+
+.partnership-programs-benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partnership-programs-benefits__item {
+  overflow: hidden;
+  flex: 1;
+  border-radius: 20px;
+  box-shadow: 37px 40px 70px -10px rgba(9, 19, 69, 0.1);
+}
+
+.partnership-programs-benefits__item:not(:last-child) {
+  margin-right: 14px;
+}
+
+.partnership-programs-benefits__body-img-container {
+  border: 2px solid var(--dark-500);
+}
+
+.partnership-programs-benefits__body-item {
+  display: flex;
+}
+
+.partnership-programs-benefits__body-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.partnership-programs-benefits__body-text {
+  font-size: 0.875rem;
+}
+
+.partnership-programs-benefits__body {
+  background-color: var(--light);
+  padding: 30px;
+  height: 100%;
+}
+
+.partnership-programs-benefits__item-header {
+  position: relative;
+}
+
+.partnership-programs-benefits__item-header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.partnership-programs-benefits__item-title {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: var(--light);
+}
+
+.partnership-programs-privilege__item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.partnership-programs-privilege__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.partnership-programs-privilege__img-container {
+  flex: 1;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #EEF3FE;
+}
+
+.partnership-programs-banner__header > * {
+  margin-bottom: 20px;
+}
+
+.partnership-programs-banner__wrapper {
+  background: url("../img/partner-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  padding: 150px 50px 50px;
+  color: var(--light);
+}
+
+.partnership-programs-step {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 30px;
+  margin-top: 70px;
+  background-color: var(--blue-100);
+}
+
+.partnership-programs-step::before,
+.partnership-programs-step::after {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  display: inline-block;
+  content: "";
+  width: 329px;
+  height: 329px;
+  border-radius: 50%;
+  border: 39px solid var(--light);
+  z-index: 1;
+}
+
+.partnership-programs-step::before {
+  bottom: -20px;
+  right: -20px;
+  top: unset;
+  left: unset;
+  border: 10px solid var(--light);
+}
+
+.partnership-programs-step__list {
+  display: flex;
+}
+
+.partnership-programs-step__item {
+  position: relative;
+  text-align: center;
+  background-color: var(--light);
+  border-radius: 10px;
+  padding: 30px;
+  z-index: 1;
+}
+
+.partnership-programs-step__item:not(:last-child) {
+  margin-right: 17px;
+}
+
+.partnership-programs-step__img-container {
+  margin-bottom: 30px;
+}/*# sourceMappingURL=style.css.map */
