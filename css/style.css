@@ -706,6 +706,7 @@ img {
 .partnership-programs-features__item-body {
   position: relative;
   background-color: var(--blue-100);
+  min-height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;

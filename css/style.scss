@@ -832,7 +832,7 @@ img {
 .partnership-programs-features__item-body {
     position: relative;
     background-color: var(--blue-100);
-
+    min-height: 160px;
     @include center-flex('all');
     flex-direction: column;
 
@@ -1558,7 +1558,7 @@ img {
         position: relative;
 
     }
- 
+
     .partnership-programs-features__item-body img {
         left: 0;
         top: unset;
