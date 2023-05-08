@@ -752,6 +752,7 @@ img {
 .partnership-programs-features__title {
     @extend %header-margin;
     @extend %h2-header;
+ 
 }
 
 .partnership-programs-features__list {
@@ -982,26 +983,32 @@ img {
 
 .partnership-programs-benefits__body {
     background-color: var(--light);
-    padding: 30px;
-    height: 100%;
+    padding: 20px;
+
+
+}
+
+.partnership-programs-benefits__item {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 392px auto;
 }
 
 .partnership-programs-benefits__item-header {
     position: relative;
+    @include center-flex('all');
+    flex-direction: column;
+    background-color: var(--blue-800);
 
 }
 
-.partnership-programs-benefits__item-header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .partnership-programs-benefits__item-title {
     position: absolute;
     top: 30px;
     left: 30px;
     color: var(--light);
+
 }
 
 
@@ -1061,7 +1068,7 @@ img {
     @extend %color-text;
 }
 
- 
+
 
 //  banner
 .partnership-programs-banner {
@@ -1286,11 +1293,12 @@ img {
         background: url('../img/hands-horizontals.png'), var(--blue-100);
         background-size: 1400px;
         background-position: center top -100px;
-
-        // background-image: url('../img/had-horizontal.png'), url('../img/hand-2.png');
-        // background-position: top -100px left -340px, top right -320px;
         background-repeat: no-repeat;
 
+    }
+
+    .partnership-programs-features {
+        top: -1000px;
     }
 
     .partnership-programs-hero__header {
@@ -1367,10 +1375,7 @@ img {
     .partnership-programs-performance {
         background: url('../img/performance-bg-900.png'), var(--blue-100);
         background-position: center top;
-    }
-
-    .partnership-programs-performance {
-        background-position: top center;
+        background-repeat: no-repeat;
     }
 
 
@@ -1426,6 +1431,10 @@ img {
 
     .partnership-programs-step__item:not(:last-child) {
         margin-right: unset;
+    }
+
+    .partnership-programs-benefits__item:first-child {
+        display: none;
     }
 
 }
@@ -1495,13 +1504,14 @@ img {
     }
 
     .partnership-programs-benefits__body {
-        flex: 1.5;
+        flex: 2;
         order: 0;
     }
 
     .partnership-programs-benefits__item-header {
         flex: 1;
         order: 1;
+   
     }
 
     .partnership-programs-benefits__item:not(:last-child) {
@@ -1513,6 +1523,10 @@ img {
         position: unset;
         color: var(--dark-500);
         margin-bottom: 20px;
+    }
+
+    .partnership-programs-benefits__item:not(:last-child) {
+        margin-right: unset;
     }
 }
 
@@ -1721,9 +1735,7 @@ img {
         min-height: 150px;
     }
 
-    .partnership-programs-benefits__item:not(:last-child) {
-        margin-right: unset;
-    }
+
 
     .partnership-programs-advantages__list {
         align-items: baseline;
@@ -1759,4 +1771,20 @@ img {
         width: 100px;
         height: 100px;
     }
+
+    .partnership-programs-benefits__item-header {
+        padding: 30px;
+    }
+}
+
+@media (max-width:320px) {
+    .partnership-programs-privilege__body-title{
+        font-size: $font-size-14;
+    }
+
+    .partnership-programs-privilege__item {
+        grid-template-columns: 1fr;
+    }
+
+    .partnership-programs-step {margin: unset; border-radius: 10px;}
 }
