@@ -526,9 +526,21 @@ img {
     border: 10px solid var(--light);
 }
 
+.partnership-programs-plans__header {@extend %header-margin;}
 .partnership-programs-plans__title {
     @extend %h2-header;
-    @extend %header-margin;
+}
+
+.partnership-programs-plans__link {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    max-width: 300px;
+    margin-left: auto;
+
 }
 
 .partnership-programs-plans__list {
@@ -1554,6 +1566,10 @@ img {
 
 @media (max-width:575.98px) {
 
+    .partnership-programs-header {
+        margin-bottom: 30px;
+    }
+
     .partnership-programs-features__item-body {
         position: relative;
 
@@ -1562,7 +1578,7 @@ img {
     .partnership-programs-features__item-body img {
         left: 0;
         top: unset;
-        bottom: 0;
+        bottom: -10px;
         position: absolute;
     }
 
@@ -1822,5 +1838,9 @@ img {
 
     .partnership-programs-features__item {
         height: 369px;
+    }
+
+    .partnership-programs-features__item-body img {
+        bottom: 0;
     }
 }
