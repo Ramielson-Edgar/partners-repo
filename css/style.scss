@@ -1101,6 +1101,7 @@ img {
     background: url('../img/partner-banner.jpg');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     border-radius: 10px;
     padding: 150px 50px 50px;
     color: var(--light);
@@ -1705,11 +1706,7 @@ img {
         margin-bottom: 10px;
     }
 
-    .partnership-programs-step__title {
-        max-width: 225px;
-        margin-inline: auto;
-    }
-
+ 
     .partnership-programs-privilege__img-container svg {
         width: 30px;
         height: 30px;
