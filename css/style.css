@@ -1287,7 +1287,7 @@ img {
     height: 50px;
   }
   .partnership-programs-step__item {
-    padding: 20px;
+    padding: 15px;
   }
   .partnership-programs-step__img-container-title {
     margin-right: 20px;
@@ -1296,14 +1296,13 @@ img {
     font-size: 20px;
   }
   .partnership-programs-step__item {
-    flex-direction: column;
     align-items: flex-start;
   }
   .partnership-programs-step__img-container-title {
     display: none;
   }
   .partnership-programs-step__img-container {
-    margin-right: unset;
+    margin-right: 10px;
     margin-bottom: 10px;
   }
   .partnership-programs-step__title {
