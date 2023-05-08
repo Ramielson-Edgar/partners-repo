@@ -629,6 +629,13 @@ img {
   margin-bottom: 1em;
 }
 
+.partnership-programs-features {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -500px;
+  background-color: var(--light);
+}
+
 .partnership-programs-features__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -713,7 +720,7 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 30px;
-  margin: 10px;
+  margin: 10px 10px 0 10px;
   z-index: 1;
 }
 
@@ -745,6 +752,7 @@ img {
 }
 
 .partnership-programs-benefits {
+  position: relative;
   background: var(--light);
 }
 
@@ -808,6 +816,13 @@ img {
   color: var(--light);
 }
 
+.partnership-programs-privilege {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -500px;
+  background-color: var(--light);
+}
+
 .partnership-programs-privilege__item {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -831,11 +846,6 @@ img {
   align-items: center;
   border-radius: 50%;
   background-color: #EEF3FE;
-}
-
-.partnership-programs-privilege {
-  position: relative;
-  background-color: var(--light);
 }
 
 .partnership-programs-banner {
