@@ -8,12 +8,14 @@
     <title>partners</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/owl.carousel.css">
+        <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="partnership-programs-header">
+    <header class="partnership-programs-header ">
         <nav class="partnership-programs-header__nav container">
             <a class="partnership-programs-header__nav-logo" href="#">
                 <img class="img-fluid" src="./img/logo.svg" alt="company logo" width="158" height="31">
@@ -37,7 +39,8 @@
 
             <div class="partnership-programs-buttons-wrapper">
                 <a class="btn-base btn-base-lg btn-white-blue" href="#">login</a>
-                <a class="btn-base btn-base-small btn-blue-white" href="#">register now</a>
+                <a class="btn-base btn-base-small btn-blue-white d-xl-inline-block d-lg-inline-block d-md-inline-block d-sm-inline-block d-none"
+                    href="#">register now</a>
             </div>
         </nav>
     </header>
@@ -47,7 +50,7 @@
         <section class="partnership-programs-hero section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-xl-0 order-lg-0 order-sm-0 order-1 col-md-9 m-lx-0 m-lg-0 m-md-auto">
                         <header class="partnership-programs-hero__header">
                             <span class="partnership-programs-hero__header-subscription">Best partnership offer</span>
                             <h1 class="partnership-programs-hero__header-title ">adroFx <span
@@ -62,6 +65,10 @@
                                 <a class="btn-base btn-base-lg btn-blue-white" href="#">Get Started</a>
                             </div>
                         </header>
+                    </div>
+                    <div
+                        class="col-lg-12 column-hero-img order-xl-1 order-lg-1 order-sm-1 order-0 d-xl-none d-lg-none d-md-none d-sm-none">
+                        <img class="img-fluid" src="./img/hands-500.png" alt="" width="388" height="311">
                     </div>
                 </div>
             </div>
@@ -187,7 +194,7 @@
             </h2>
 
             <div class="container">
-                <ul class="partnership-programs-plans__list">
+                <ul class="partnership-programs-plans__list d-xl-flex d-lg-flex d-none">
                     <li class="partnership-programs-plans__item">
                         <div class="partnership-programs-plans__item-header">
                             <svg width="53" height="50">
@@ -209,12 +216,18 @@
                             <span class="partnership-programs-plans__price-cpa text-bold">cpa</span>
                         </div>
                         <div class="partnership-programs-plans__btn-container">
-                            <a class="btn-base btn-base-small btn-white-blue" href="#">
-                                <svg width="12" height="19">
+                            <a class="btn-base plans btn-base-small btn-white-blue" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
                                     <use href="./icons/sprite.svg#icon-arrow-right"></use>
                                 </svg>
+                                <span class="btn-text">learn more</span>
                             </a>
-                            <a class="btn-base btn-base-lg btn-white-blue" href="#">learn more</a>
+                            <a class="btn-base plans btn-base-small btn-white-blue is-active" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
+                                    <use href="./icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                                <span class="btn-text">learn more</span>
+                            </a>
                         </div>
                     </li>
 
@@ -241,12 +254,18 @@
                             <span class="partnership-programs-plans__price-cpa text-bold">cpa</span>
                         </div>
                         <div class="partnership-programs-plans__btn-container">
-                            <a class="btn-base btn-base-small btn-white-blue" href="#">
-                                <svg width="12" height="19">
+                            <a class="btn-base plans btn-base-small btn-white-blue" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
                                     <use href="./icons/sprite.svg#icon-arrow-right"></use>
                                 </svg>
+                                <span class="btn-text">learn more</span>
                             </a>
-                            <a class="btn-base btn-base-lg btn-white-blue" href="#">learn more</a>
+                            <a class="btn-base plans btn-base-small btn-white-blue is-active" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
+                                    <use href="./icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                                <span class="btn-text">learn more</span>
+                            </a>
                         </div>
                     </li>
 
@@ -257,6 +276,7 @@
                             </svg>
                             <p class="partnership-programs-plans__item-title text-bold">Hybrid Plan</p>
                         </div>
+
                         <div class="partnership-programs-plans__body">
                             <p class="partnership-programs-plans__body-title text-bold">CPA+IB in one </p>
                             <p class="partnership-programs-plans__body-text">The best of both worlds Providing you
@@ -265,22 +285,221 @@
                                 partnership
                                 needs </p>
                         </div>
+
+                        <div class="partnership-programs-plans__price">
+                            <span class="partnership-programs-plans__price-up text-bold">up to</span>
+                            <div class="partnership-programs-plans-price-amount-wrapper">
+                                <h3 class="partnership-programs-plans__price-amount text-bold">$15 <span
+                                        class="partnership-programs-plans__price-per-lot">per lot</span></h3>
+                                <hr>
+                                <h3 class="partnership-programs-plans__price-amount text-bold">$600</h3>
+                            </div>
+
+                            <span class="partnership-programs-plans__price-cpa text-bold">cpa</span>
+                        </div>
+
+                        <div class="partnership-programs-plans__btn-container">
+                            <a class="btn-base plans btn-base-small btn-white-blue" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
+                                    <use href="./icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                                <span class="btn-text">learn more</span>
+                            </a>
+                            <a class="btn-base plans btn-base-small btn-white-blue is-active" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
+                                    <use href="./icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                                <span class="btn-text">learn more</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul
+                    class="partnership-programs-plans__list owl-carousel-plans d-xl-none d-lg-none owl-carousel owl-theme">
+                    <li class="partnership-programs-plans__item">
+                        <div class="partnership-programs-plans__item-header">
+                            <svg width="53" height="50">
+                                <use href="./icons/sprite.svg#icon-multy-control"></use>
+                            </svg>
+                            <p class="partnership-programs-plans__item-title text-bold">CPA Plan</p>
+                        </div>
+                        <div class="partnership-programs-plans__body">
+                            <p class="partnership-programs-plans__body-title text-bold">Also called affiliate program
+                            </p>
+                            <p class="partnership-programs-plans__body-text">Convert your website traffic or marketing
+                                Knowledge to profit with AdroFx as a CPA affiliate. From 190-plus countries with no
+                                limits
+                                in the CPA's only calculated on deposit, not by GEO</p>
+                        </div>
                         <div class="partnership-programs-plans__price">
                             <span class="partnership-programs-plans__price-up text-bold">up to</span>
                             <h3 class="partnership-programs-plans__price-amount text-bold">$1200</h3>
                             <span class="partnership-programs-plans__price-cpa text-bold">cpa</span>
                         </div>
-
                         <div class="partnership-programs-plans__btn-container">
-                            <a class="btn-base btn-base-small btn-white-blue" href="#">
-                                <svg width="12" height="19">
+                            <a class="btn-base plans btn-base-small btn-white-blue" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
                                     <use href="./icons/sprite.svg#icon-arrow-right"></use>
                                 </svg>
+                                <span class="btn-text">learn more</span>
                             </a>
-                            <a class="btn-base btn-base-lg btn-white-blue" href="#">learn more</a>
+                            <a class="btn-base plans btn-base-small btn-white-blue is-active" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
+                                    <use href="./icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                                <span class="btn-text">learn more</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="partnership-programs-plans__item">
+                        <div class="partnership-programs-plans__item-header">
+                            <svg width="50" height="50">
+                                <use href="./icons/sprite.svg#icon-advance"></use>
+                            </svg>
+                            <p class="partnership-programs-plans__item-title text-bold">Introducing broker
+                            </p>
+                        </div>
+                        <div class="partnership-programs-plans__body">
+                            <p class="partnership-programs-plans__body-title text-bold">Also Called IB or Rebate per lot
+                            </p>
+                            <p class="partnership-programs-plans__body-text">When you partner with AdroFx as an
+                                Introducing
+                                Broker you will receive up to 80% revenue share. One of the highest payments in the
+                                industry
+                            </p>
+                        </div>
+                        <div class="partnership-programs-plans__price">
+                            <span class="partnership-programs-plans__price-up text-bold">up to</span>
+                            <h3 class="partnership-programs-plans__price-amount text-bold">$30</h3>
+                            <span class="partnership-programs-plans__price-cpa text-bold">cpa</span>
+                        </div>
+                        <div class="partnership-programs-plans__btn-container">
+                            <a class="btn-base plans btn-base-small btn-white-blue" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
+                                    <use href="./icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                                <span class="btn-text">learn more</span>
+                            </a>
+                            <a class="btn-base plans btn-base-small btn-white-blue is-active" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
+                                    <use href="./icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                                <span class="btn-text">learn more</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="partnership-programs-plans__item">
+                        <div class="partnership-programs-plans__item-header">
+                            <svg width="50" height="50">
+                                <use href="./icons/sprite.svg#icon-crown"></use>
+                            </svg>
+                            <p class="partnership-programs-plans__item-title text-bold">Hybrid Plan</p>
+                        </div>
+
+                        <div class="partnership-programs-plans__body">
+                            <p class="partnership-programs-plans__body-title text-bold">CPA+IB in one </p>
+                            <p class="partnership-programs-plans__body-text">The best of both worlds Providing you
+                                Partially
+                                with Rebate and CPA at ones. Get all the benefits from both plans to suit your
+                                partnership
+                                needs </p>
+                        </div>
+
+                        <div class="partnership-programs-plans__price">
+                            <span class="partnership-programs-plans__price-up text-bold">up to</span>
+                            <div class="partnership-programs-plans-price-amount-wrapper">
+                                <h3 class="partnership-programs-plans__price-amount text-bold">$15 <span
+                                        class="partnership-programs-plans__price-per-lot">per lot</span></h3>
+                                <hr>
+                                <h3 class="partnership-programs-plans__price-amount text-bold">$600</h3>
+                            </div>
+
+                            <span class="partnership-programs-plans__price-cpa text-bold">cpa</span>
+                        </div>
+
+                        <div class="partnership-programs-plans__btn-container">
+                            <a class="btn-base plans btn-base-small btn-white-blue" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
+                                    <use href="./icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                                <span class="btn-text">learn more</span>
+                            </a>
+                            <a class="btn-base plans btn-base-small btn-white-blue is-active" href="#">
+                                <svg class="icon-arrow" width="12" height="19">
+                                    <use href="./icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                                <span class="btn-text">learn more</span>
+                            </a>
                         </div>
                     </li>
                 </ul>
+            </div>
+
+            <div class="container mt-5">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    CPL Affiliate Program
+
+
+                                    <div class="card__img-container">
+                                        <svg width="12" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h2 class="card-body-title">Selling leads? We are Ready to buy! </h2>
+                                <p class="card-body-description"> If you are engaged in lead generation, take a closer
+                                    look at our offer. CPL (Cost Per Lead) program implies payments for leads - contact
+                                    details of users interested in our company`s services. Under the CPL campaign, we
+                                    are ready to work exclusively with affiliate networks, media buying agencies, and
+                                    arbitration teams. You will need to register and discussing more info with a
+                                    partnership manager</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Partnership & Promotions
+                                    <div class="card__img-container">
+                                        <svg width="12" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h2 class="card-body-title">Do you have traffic or huge audience ?</h2>
+                                <p class="card-body-description">If you have a blog ,YouTube channel , Tiktok and other
+                                    social media platforms and want to earn some money we have multiple ways to work
+                                    With creators and content Developers. Be prepared to provide statistics and traffic
+                                    reports
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -292,7 +511,7 @@
 
 
             <div class="container">
-                <ul class="partnership-programs-features__list">
+                <ul class="partnership-programs-features__list toggle">
                     <li class="partnership-programs-features__item">
                         <div class="partnership-programs-features__item-header">
                             <h3 class="partnership-programs-features__item-title">Trading Platforms</h3>
@@ -332,10 +551,11 @@
                             </ul>
                         </div>
                         <div class="partnership-programs-features__item-body">
-                            <img class="img-fluid" src="./img/product-1.png" alt="" width="380" height="175">
+
+                            <img class="img-fluid" src="./img/icom-platform.svg" alt="" width="158" height="102">
+                            <!-- <img class="img-fluid" src="./img/product-1.png" alt="" width="380" height="175"> -->
                         </div>
                     </li>
-
                     <li class="partnership-programs-features__item">
                         <div class="partnership-programs-features__item-header">
                             <h3 class="partnership-programs-features__item-title">Top Markets</h3>
@@ -376,7 +596,8 @@
                             </ul>
                         </div>
                         <div class="partnership-programs-features__item-body">
-                            <img class="img-fluid" src="./img/product-2.png" alt="" width="403" height="240">
+                            <img class="img-fluid" src="./img/icon-top-market.svg" alt="" width="225" height="111">
+                            <!-- <img class="img-fluid" src="./img/product-2.png" alt="" width="403" height="240"> -->
                         </div>
                     </li>
                     <li class="partnership-programs-features__item">
@@ -417,7 +638,8 @@
                             </ul>
                         </div>
                         <div class="partnership-programs-features__item-body">
-                            <img class="img-fluid" src="./img/product-3.png" alt="" width="357" height="208">
+                            <img class="img-fluid" src="./img/icon-trading-tolls.svg" alt="" width="135" height="116">
+                            <!-- <img class="img-fluid" src="./img/product-3.png" alt="" width="357" height="208"> -->
                         </div>
                     </li>
                     <li class="partnership-programs-features__item">
@@ -460,7 +682,8 @@
                             </ul>
                         </div>
                         <div class="partnership-programs-features__item-body">
-                            <img class="img-fluid" src="./img/product-4.png" alt="" width="403" height="214">
+                            <img class="img-fluid" src="./img/icon-copy-trade.svg" alt="" width="238" height="76">
+                            <!-- <img class="img-fluid" src="./img/product-4.png" alt="" width="403" height="214"> -->
                         </div>
                     </li>
                     <li class="partnership-programs-features__item">
@@ -504,7 +727,8 @@
                             </ul>
                         </div>
                         <div class="partnership-programs-features__item-body">
-                            <img class="img-fluid" src="./img/product-5.png" alt="" width="405" height="265">
+                            <img class="img-fluid" src="./img/icon-assets.svg" alt="" width="164" height="73">
+                            <!-- <img class="img-fluid" src="./img/product-5.png" alt="" width="405" height="265"> -->
                         </div>
                     </li>
                     <li class="partnership-programs-features__item">
@@ -545,17 +769,285 @@
                             </ul>
                         </div>
                         <div class="partnership-programs-features__item-body">
-                            <img class="img-fluid" src="./img/product-6.png" alt="" width="412" height="196">
+                            <img class="img-fluid" src="./img/icon-trading-educational.svg" alt="" width="145"
+                                height="121">
+                            <!-- <img class="img-fluid" src="./img/product-6.png" alt="" width="412" height="196"> -->
                         </div>
                     </li>
-
-
                 </ul>
+
+                <ul
+                    class="partnership-programs-features__list owl-carousel-features d-xl-none d-lg-none d-md-none  owl-carousel owl-teme">
+                    <li class="partnership-programs-features__item">
+                        <div class="partnership-programs-features__item-header">
+                            <h3 class="partnership-programs-features__item-title">Trading Platforms</h3>
+                            <ul class="partnership-programs-features__item-list">
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Allpips & MetaTrader 4</p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Trading from anywhere 24/5
+                                    </p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Available for all clients
+                                        on any device</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="partnership-programs-features__item-body">
+
+                            <img class="img-fluid" src="./img/icom-platform.svg" alt="" width="158" height="102">
+                            <!-- <img class="img-fluid" src="./img/product-1.png" alt="" width="380" height="175"> -->
+                        </div>
+                    </li>
+                    <li class="partnership-programs-features__item">
+                        <div class="partnership-programs-features__item-header">
+                            <h3 class="partnership-programs-features__item-title">Top Markets</h3>
+                            <ul class="partnership-programs-features__item-list">
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">CFDs, Forex, Indices,
+                                        Metals, Crypto, Shares</p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Short & long trading for
+                                        Market & pending Order</p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Low Spread and Zero fees
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="partnership-programs-features__item-body">
+                            <img class="img-fluid" src="./img/icon-top-market.svg" alt="" width="225" height="111">
+                            <!-- <img class="img-fluid" src="./img/product-2.png" alt="" width="403" height="240"> -->
+                        </div>
+                    </li>
+                    <li class="partnership-programs-features__item">
+                        <div class="partnership-programs-features__item-header">
+                            <h3 class="partnership-programs-features__item-title">trading Tools</h3>
+                            <ul class="partnership-programs-features__item-list">
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Daily Trading Signals </p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Daily Market Analysis</p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Economic Calendar ...etc
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="partnership-programs-features__item-body">
+                            <img class="img-fluid" src="./img/icon-trading-tolls.svg" alt="" width="135" height="116">
+                            <!-- <img class="img-fluid" src="./img/product-3.png" alt="" width="357" height="208"> -->
+                        </div>
+                    </li>
+                    <li class="partnership-programs-features__item">
+                        <div class="partnership-programs-features__item-header">
+                            <h3 class="partnership-programs-features__item-title">Copy Trading</h3>
+                            <ul class="partnership-programs-features__item-list">
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Copy the traders of lead
+                                        Traders</p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Save time with copy trading
+                                    </p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Leaderboard with statistic
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="partnership-programs-features__item-body">
+                            <img class="img-fluid" src="./img/icon-copy-trade.svg" alt="" width="238" height="76">
+                            <!-- <img class="img-fluid" src="./img/product-4.png" alt="" width="403" height="214"> -->
+                        </div>
+                    </li>
+                    <li class="partnership-programs-features__item">
+                        <div class="partnership-programs-features__item-header">
+                            <h3 class="partnership-programs-features__item-title">Over 100+ tradable assets</h3>
+                            <ul class="partnership-programs-features__item-list">
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Real time Trade openning
+                                    </p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">All major financial markets
+                                    </p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Professional tools for
+                                        trading
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="partnership-programs-features__item-body">
+                            <img class="img-fluid" src="./img/icon-assets.svg" alt="" width="164" height="73">
+                            <!-- <img class="img-fluid" src="./img/product-5.png" alt="" width="405" height="265"> -->
+                        </div>
+                    </li>
+                    <li class="partnership-programs-features__item">
+                        <div class="partnership-programs-features__item-header">
+                            <h3 class="partnership-programs-features__item-title">trading education</h3>
+                            <ul class="partnership-programs-features__item-list">
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Educational Video</p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Trading Ebooks</p>
+
+                                </li>
+                                <li class="partnership-programs-features__item-list-item">
+                                    <div class="partnership-programs-features__item-img-container">
+                                        <svg width="8" height="6">
+                                            <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="partnership-programs-features__item-list-text">Trading guides and
+                                        strategies</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="partnership-programs-features__item-body">
+                            <img class="img-fluid" src="./img/icon-trading-educational.svg" alt="" width="145"
+                                height="121">
+                            <!-- <img class="img-fluid" src="./img/product-6.png" alt="" width="412" height="196"> -->
+                        </div>
+                    </li>
+                </ul>
+
+
             </div>
 
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-lg-3 m-auto">
+                    <div class="col-lg-3 text-center m-auto">
                         <a class="btn-base btn-base-lg btn-green-red" href="#">join today</a>
                     </div>
                 </div>
@@ -565,10 +1057,11 @@
         <section class="partnership-programs-performance section-padding">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-7 order-xl-1 order-lg-1 order-md-1">
-                        <img class="img-fluid" src="./img/performance.png" alt="" width="613" height="485">
+                    <div class="col-lg-7 order-xl-1 order-lg-1">
+
+                        <img class="img-fluid" src="./img/performance.png" alt="" width="644" height="458">
                     </div>
-                    <div class="col-lg-5 order-xl-0 order-lg-0 order-md-0">
+                    <div class="col-lg-5 col-md-10 m-md-auto order-xl-0 order-lg-0">
                         <header class="partnership-programs-performance__header">
                             <h2 class="partnership-programs-performance__header-title">
                                 Personal dashboard
@@ -587,12 +1080,13 @@
 
                 </div>
             </div>
+
         </section>
 
         <section class="partnership-programs-benefits section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 m-auto">
+                    <div class="col-lg-7 m-auto">
                         <header class="partnership-programs-benefits__header container">
                             <h2 class="partnership-programs-benefits__header-title">
                                 Fast & Easy Onboarding to
@@ -610,10 +1104,15 @@
                 <ul class="partnership-programs-benefits__list">
                     <li class="partnership-programs-benefits__item">
                         <div class="partnership-programs-benefits__item-header">
-                            <p class="partnership-programs-benefits__item-title text-bold">Fast Signup</p>
+                            <p
+                                class="partnership-programs-benefits__item-title d-xl-block d-lg-block d-md-block d-sm-none d-block text-bold">
+                                Fast Signup</p>
                             <img class="img-fluid" src="./img/automated__card-1.jpg" alt="" width="330" height="453">
                         </div>
                         <div class="partnership-programs-benefits__body">
+                            <p
+                                class="partnership-programs-benefits__item-title d-xl-none d-lg-none d-md-none d-sm-block d-none text-bold">
+                                Fast Signup</p>
                             <ul class="partnership-programs-benefits__body-list">
                                 <li class="partnership-programs-benefits__body-item">
 
@@ -649,10 +1148,15 @@
 
                     <li class="partnership-programs-benefits__item">
                         <div class="partnership-programs-benefits__item-header">
-                            <p class="partnership-programs-benefits__item-title text-bold">Fast Signup</p>
+                            <p
+                                class="partnership-programs-benefits__item-title d-xl-block d-lg-block d-md-block d-sm-none d-block text-bold">
+                                Fast KYC</p>
                             <img class="img-fluid" src="./img/automated__card-2.jpg" alt="" width="330" height="453">
                         </div>
                         <div class="partnership-programs-benefits__body">
+                            <p
+                                class="partnership-programs-benefits__item-title d-xl-npne d-lg-none d-md-none d-sm-block  d-none text-bold">
+                                Fast KYC</p>
                             <ul class="partnership-programs-benefits__body-list">
                                 <li class="partnership-programs-benefits__body-item">
 
@@ -687,8 +1191,7 @@
                         </div>
                     </li>
 
-
-                    <li class="partnership-programs-benefits__item">
+                    <li class="partnership-programs-benefits__item d-xl-flex flex-column d-lg-flex d-none">
                         <div class="partnership-programs-benefits__item-header">
                             <p class="partnership-programs-benefits__item-title text-bold">approval</p>
                             <img class="img-fluid" src="./img/automated__card-3.jpg" alt="" width="330" height="453">
@@ -727,13 +1230,12 @@
                             </ul>
                         </div>
                     </li>
-
                 </ul>
             </div>
 
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-lg-3 m-auto">
+                    <div class="col-lg-3 text-center col-md-4 m-md-auto m-auto">
                         <a class="btn-base btn-base-lg btn-blue-white" href="#">Get Started</a>
                     </div>
                 </div>
@@ -743,7 +1245,7 @@
         <section class="partnership-programs-privilege section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 m-auto">
+                    <div class="col-lg-7 m-auto">
                         <header class="partnership-programs-privilege__header container text-center">
                             <h2 class="partnership-programs-privilege__header-title">AdroFx <span
                                     class="text-gradient">Partnership Benefits</span></h2>
@@ -759,7 +1261,7 @@
 
             <div class="container">
                 <ul class="partnership-programs-privilege__list">
-                    <li class="partnership-programs-privilege__item">
+                    <li class="partnership-programs-privilege__item toggle ">
                         <div class="partnership-programs-privilege__img-container">
                             <svg width="23" height="31">
                                 <use href="./icons/sprite.svg#icon-revenue-share"></use>
@@ -771,7 +1273,7 @@
                                 referral journey with the highest spread revenue share, rebates, and CPA structures.</p>
                         </div>
                     </li>
-                    <li class="partnership-programs-privilege__item">
+                    <li class="partnership-programs-privilege__item toggle">
                         <div class="partnership-programs-privilege__img-container">
                             <svg width="35" height="41">
                                 <use href="./icons/sprite.svg#icon-cup"></use>
@@ -785,7 +1287,7 @@
                                 specific needs without any limits.</p>
                         </div>
                     </li>
-                    <li class="partnership-programs-privilege__item">
+                    <li class="partnership-programs-privilege__item toggle">
                         <div class="partnership-programs-privilege__img-container">
                             <svg width="43" height="47">
                                 <use href="./icons/sprite.svg#icon-payment"></use>
@@ -811,11 +1313,10 @@
                             </p>
                             <p class="partnership-programs-privilege__body-text">AdroFx top sales teams focused on
                                 acquisition, relationship management, and educating and supporting our clients for
-                                long-term
-                                success.</p>
+                                long-term success.</p>
                         </div>
                     </li>
-                    <li class="partnership-programs-privilege__item">
+                    <li class="partnership-programs-privilege__item toggle">
                         <div class="partnership-programs-privilege__img-container">
                             <svg width="38" height="40">
                                 <use href="./icons/sprite.svg#icon-comissions"></use>
@@ -841,7 +1342,7 @@
                                 that has 20+ years of industry experience in the market working with 190+ countries.</p>
                         </div>
                     </li>
-                    <li class="partnership-programs-privilege__item">
+                    <li class="partnership-programs-privilege__item toggle">
                         <div class="partnership-programs-privilege__img-container">
                             <svg width="47" height="39">
                                 <use href="./icons/sprite.svg#icon-track-performance"></use>
@@ -854,7 +1355,7 @@
                                 earned commissions fromyour Partners Dashboard.</p>
                         </div>
                     </li>
-                    <li class="partnership-programs-privilege__item">
+                    <li class="partnership-programs-privilege__item toggle">
                         <div class="partnership-programs-privilege__img-container">
                             <svg width="37" height="40">
                                 <use href="./icons/sprite.svg#icon-trading-chart"></use>
@@ -868,16 +1369,40 @@
                                 conversion rates.</p>
                         </div>
                     </li>
+                    <li class="partnership-programs-privilege__item">
+                        <div class="partnership-programs-privilege__img-container">
+                            <svg width="52" height="37">
+                                <use href="./icons/sprite.svg#icon-height-comissions"></use>
+                            </svg>
+                        </div>
+                        <div class="partnership-programs-privilege__body">
+                            <p class="partnership-programs-privilege__body-title text-bold">High commissions</p>
+                            <p class="partnership-programs-privilege__body-text">Be rewarded for your work with our
+                                generous commission structure. Earn without limits.</p>
+                        </div>
+                    </li>
+                    <li class="partnership-programs-privilege__item">
+                        <div class="partnership-programs-privilege__img-container">
+                            <svg width="37" height="40">
+                                <use href="./icons/sprite.svg#icon-maximyze"></use>
+                            </svg>
+                        </div>
+                        <div class="partnership-programs-privilege__body">
+                            <p class="partnership-programs-privilege__body-title text-bold">Maximize conversions</p>
+                            <p class="partnership-programs-privilege__body-text">Get industry-leading click-through
+                                rates with marketing assets and fresh campaigns.</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
 
-        <article class="partnership-programs-banner" role="banner">
+        <article class="partnership-programs-banner section-padding" role="banner">
 
             <div class="container">
                 <div class="partnership-programs-banner__wrapper">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-7">
                             <header class="partnership-programs-banner__header">
                                 <h2 class="partnership-programs-banner__header-title">
                                     Unlimited earning potential
@@ -904,6 +1429,7 @@
                 <ul class="partnership-programs-step__list">
                     <li class="partnership-programs-step__item">
                         <div class="partnership-programs-step__img-container">
+                            <h2 class="partnership-programs-step__img-container-title">1</h2>
                             <svg width="137" height="137">
                                 <use href="./icons/sprite.svg#icon-step-1"></use>
                             </svg>
@@ -916,6 +1442,7 @@
                     </li>
                     <li class="partnership-programs-step__item">
                         <div class="partnership-programs-step__img-container">
+                            <h2 class="partnership-programs-step__img-container-title">2</h2>
                             <svg width="137" height="137">
                                 <use href="./icons/sprite.svg#icon-step-2"></use>
                             </svg>
@@ -928,6 +1455,7 @@
                     </li>
                     <li class="partnership-programs-step__item">
                         <div class="partnership-programs-step__img-container">
+                            <h2 class="partnership-programs-step__img-container-title">3</h2>
                             <svg width="137" height="137">
                                 <use href="./icons/sprite.svg#icon-step-3"></use>
                             </svg>
@@ -944,8 +1472,8 @@
 
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-lg-3 m-auto">
-                        <a class="btn-base btn-base-lg btn-green-red" href="#"  >Get Started</a>
+                    <div class="col-lg-3 col-md-4 m-auto">
+                        <a class="btn-base btn-base-lg btn-green-red" href="#">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -962,6 +1490,80 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            const currentButton = $('.partnership-programs-plans__btn-container .btn-white-blue')
+            currentButton.hover(function () {
+
+                $(this).addClass('is-active')
+                $(this).siblings($('.btn-white-blue')).removeClass('is-active')
+            });
+
+
+            $('.owl-carousel-plans').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1,
+                        autoplayTimeout: 5000,
+                        autoplayHoverPause: true,
+                        stagePadding: 0,
+                        URLhashListener: true,
+                        autoplayHoverPause: true,
+                        startPosition: "URLHash",
+                    },
+                    900: {
+                        items: 2,
+                        nav: false,
+                    }
+                }
+            })
+
+            function setDots(){
+  $(".owl-carousel-features .owl-dots").removeClass('disabled');
+}
+
+            $('.owl-carousel-features').owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: false,
+                dots: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                stagePadding: 0,
+                URLhashListener: true,
+                autoplayHoverPause: true,
+                startPosition: "URLHash",
+                responsive: {
+                    0: {
+                        items: 1,
+                        dots: true,
+                    },
+                    600: {
+                        items: 1,
+                        dots: true,
+                    },
+
+                },
+     
+            })
+
+
+
+
+
+
+        })
+    </script>
 </body>
 
 </html>
