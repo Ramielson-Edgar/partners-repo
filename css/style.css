@@ -704,13 +704,39 @@ img {
 }
 
 .partnership-programs-features__item-body {
-  min-height: 160px;
+  position: relative;
+  background-color: var(--blue-100);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #4a89f2;
   z-index: 1;
+}
+
+.partnership-programs-features__item-body::before,
+.partnership-programs-features__item-body::after {
+  position: absolute;
+  bottom: -50px;
+  right: -20px;
+  display: inline-block;
+  content: "";
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  border: 30px solid rgb(255, 255, 255);
+  z-index: -1;
+}
+
+.partnership-programs-features__item-body::before {
+  top: -30px;
+  left: -30px;
+  border: 10px solid rgb(255, 255, 255);
+}
+
+.partnership-programs-features__item-body img {
+  position: absolute;
+  top: -15px;
+  z-index: 2;
 }
 
 .partnership-programs-performance {
@@ -898,8 +924,8 @@ img {
 }
 
 .partnership-programs-step::before {
-  bottom: -20px;
-  right: -20px;
+  bottom: -150px;
+  right: -150px;
   top: unset;
   left: unset;
   border: 10px solid var(--light);
@@ -964,10 +990,10 @@ img {
 
 @media (min-width: 1440.98px) {
   .partnership-programs-hero {
-    background: url("../img/had-1920.png"), var(--blue-100);
-    background-repeat: no-repeat;
-    background-position: center bottom -30px;
-    background-size: contain;
+    background: url("../img/had-1920.png"), url("../img/hand-2-90deg.png"), var(--blue-100);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom -30px, center top -50px;
+    background-size: contain, 1920px;
   }
 }
 @media (max-width: 1198px) {
@@ -1172,12 +1198,18 @@ img {
   .partnership-programs-features__item-header {
     padding: 40px;
   }
-  .owl-carousel-features.owl-carousel .owl-item img {
-    width: 150px;
+  .partnership-programs-features__item {
+    height: 429px;
   }
-  .owl-carousel-features.owl-carousel .owl-item:nth-child(4) img,
-.owl-carousel-features.owl-carousel .owl-item:nth-child(2) img {
-    width: 220px;
+  .partnership-programs-features__item-body img {
+    left: 0;
+    top: -20px;
+    bottom: 0;
+    position: absolute;
+  }
+  .partnership-programs-features__item:hover {
+    box-shadow: unset;
+    transform: unset;
   }
   .partnership-programs-benefits__list {
     flex-direction: column;
@@ -1186,12 +1218,24 @@ img {
     display: flex;
   }
   .partnership-programs-benefits__body {
-    flex: 2;
+    flex: 1;
     order: 0;
   }
-  .partnership-programs-benefits__item-header {
+  .owl-carousel-features .owl-carousel .owl-item img {
+    width: 100%;
+    height: 100%;
+  }
+  .partnership-programs-features__item-header {
     flex: 1;
+    flex-grow: unset;
+  }
+  .partnership-programs-features__item-body {
+    flex: 1;
+    height: unset;
+  }
+  .partnership-programs-benefits__item-header {
     order: 1;
+    flex: 1;
   }
   .partnership-programs-benefits__item:not(:last-child) {
     margin-bottom: 10px;
@@ -1206,6 +1250,15 @@ img {
   }
 }
 @media (max-width: 575.98px) {
+  .partnership-programs-features__item-body {
+    position: relative;
+  }
+  .partnership-programs-features__item-body img {
+    left: 0;
+    top: unset;
+    bottom: 0;
+    position: absolute;
+  }
   .partnership-programs-hero {
     background: var(--blue-100);
   }
@@ -1247,9 +1300,6 @@ img {
 .partnership-programs-features__title,
 .partnership-programs-award__title {
     text-align: center;
-  }
-  .partnership-programs-features__item-body img {
-    top: 0;
   }
   .partnership-programs-benefits__item {
     flex-direction: column;
@@ -1361,9 +1411,6 @@ img {
   .partnership-programs-features__item-header {
     padding: 20px 20px 40px 20px;
   }
-  .partnership-programs-features__item-body {
-    min-height: 150px;
-  }
   .partnership-programs-advantages__list {
     align-items: baseline;
     gap: 0;
@@ -1397,7 +1444,7 @@ img {
     padding: 30px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .partnership-programs-privilege__body-title {
     font-size: 0.875rem;
   }
@@ -1407,5 +1454,8 @@ img {
   .partnership-programs-step {
     margin: unset;
     border-radius: 10px;
+  }
+  .partnership-programs-features__item {
+    height: 369px;
   }
 }/*# sourceMappingURL=style.css.map */
