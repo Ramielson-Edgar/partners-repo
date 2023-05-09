@@ -665,7 +665,7 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-basis: 365px;
+  flex-basis: 363px;
   border: 2px solid #E8ECFF;
   background-color: var(--light);
   border-radius: 20px;
@@ -678,9 +678,31 @@ img {
   z-index: 2;
 }
 
+.partnership-programs-features__item-body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  background-color: var(--blue-100);
+  z-index: 1;
+}
+
+.partnership-programs-features__item-body img {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
 .partnership-programs-features__item-header {
-  padding: 30px 20px 50px;
+  padding: 20px 20px 50px;
   flex-grow: 1;
+}
+
+.partnership-programs-features__item:nth-child(4):hover,
+.partnership-programs-features__item:first-child:hover {
+  box-shadow: 27px 24px 50px -10px rgba(9, 19, 69, 0.2);
 }
 
 .partnership-programs-features__item-list-item:not(:last-child) {
@@ -714,17 +736,6 @@ img {
   line-height: 20px;
 }
 
-.partnership-programs-features__item-body {
-  position: relative;
-  background-color: var(--blue-100);
-  min-height: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1;
-}
-
 .partnership-programs-features__item-body::before,
 .partnership-programs-features__item-body::after {
   position: absolute;
@@ -743,12 +754,6 @@ img {
   top: -30px;
   left: -30px;
   border: 10px solid rgb(255, 255, 255);
-}
-
-.partnership-programs-features__item-body img {
-  position: absolute;
-  top: -15px;
-  z-index: 2;
 }
 
 .partnership-programs-performance {
@@ -1044,12 +1049,8 @@ img {
   .partnership-programs-plans__item:not(:last-child) {
     margin-right: 7px;
   }
-  .partnership-programs-features__item-body img {
-    top: 0;
-    bottom: 0;
-  }
   .partnership-programs-features__item-header {
-    padding: 30px 30px 60px;
+    padding: 30px;
   }
   .partnership-programs-features__item-title {
     font-size: 1rem;
@@ -1111,24 +1112,22 @@ img {
   .partnership-programs-features__list {
     grid-template-columns: 1fr;
   }
-  .partnership-programs-features__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
   .partnership-programs-features__item-header {
-    flex: 2;
     padding: 30px;
+    flex: 2;
+  }
+  .partnership-programs-features__item {
+    flex-direction: row;
   }
   .partnership-programs-features__item-body {
     flex: 1.5;
     height: 100%;
   }
   .partnership-programs-features__item-body img {
-    top: 40px;
+    left: -20px;
   }
   .partnership-programs-features__item:nth-child(4) .partnership-programs-features__item-body img {
-    top: 60px;
+    bottom: -30px;
   }
   .partnership-programs-performance {
     background: url("../img/performance-bg-900.png"), var(--blue-100);
@@ -1204,23 +1203,37 @@ img {
   .partnership-programs-features__list.toggle {
     display: none;
   }
+  .partnership-programs-features__item .partnership-programs-features__item-body img {
+    left: 0;
+    width: 80%;
+  }
+  .partnership-programs-features__item .partnership-programs-features__item-body {
+    height: 180px;
+    flex: unset;
+  }
+  .owl-item:first-child .partnership-programs-features__item-body img {
+    bottom: 6px;
+  }
+  .owl-item:nth-child(2) .partnership-programs-features__item-body img {
+    bottom: -6px;
+  }
+  .owl-item:nth-child(3) .partnership-programs-features__item-body img {
+    bottom: -19px;
+  }
+  .owl-item:last-child .partnership-programs-features__item-body img {
+    bottom: 12px;
+  }
   .partnership-programs-features__item {
     flex-direction: column;
-    align-items: unset;
   }
   .partnership-programs-features__item-header {
     padding: 40px;
+    flex: unset;
   }
-  .partnership-programs-features__item {
-    height: 429px;
-  }
-  .partnership-programs-features__item-body img {
-    left: 0;
-    top: -20px;
-    bottom: 0;
-    position: absolute;
-  }
-  .partnership-programs-features__item:hover {
+  .partnership-programs-features__item:nth-child(4):hover,
+.partnership-programs-features__item:first-child:hover,
+.partnership-programs-features__item:focus,
+.partnership-programs-features__item:hover {
     box-shadow: unset;
     transform: unset;
   }
@@ -1233,10 +1246,6 @@ img {
   .partnership-programs-benefits__body {
     flex: 1;
     order: 0;
-  }
-  .owl-carousel-features .owl-carousel .owl-item img {
-    width: 100%;
-    height: 100%;
   }
   .partnership-programs-features__item-header {
     flex: 1;
@@ -1263,17 +1272,19 @@ img {
   }
 }
 @media (max-width: 575.98px) {
+  .partnership-programs-plans__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .partnership-programs-plans__link {
+    max-width: 100%;
+    margin-inline: unset;
+  }
   .partnership-programs-header {
     margin-bottom: 30px;
-  }
-  .partnership-programs-features__item-body {
-    position: relative;
-  }
-  .partnership-programs-features__item-body img {
-    left: 0;
-    top: unset;
-    bottom: -10px;
-    position: absolute;
   }
   .partnership-programs-hero {
     background: var(--blue-100);
@@ -1423,6 +1434,36 @@ img {
   .partnership-programs-features__item-header {
     padding: 20px 20px 40px 20px;
   }
+  .partnership-programs-features__item {
+    justify-content: space-between;
+  }
+  .partnership-programs-features__item .partnership-programs-features__item-body {
+    height: 170px;
+  }
+  .owl-item:first-child .partnership-programs-features__item-body img {
+    top: -20px;
+    bottom: unset;
+  }
+  .owl-item:last-child .partnership-programs-features__item-body img {
+    top: -25px;
+    bottom: unset;
+  }
+  .owl-item:nth-child(5) .partnership-programs-features__item-body img {
+    top: -20px;
+    bottom: unset;
+  }
+  .owl-item:nth-child(3) .partnership-programs-features__item-body img {
+    bottom: unset;
+    top: 0;
+  }
+  .owl-item:nth-child(4) .partnership-programs-features__item-body img {
+    bottom: -10px;
+    top: unset;
+  }
+  .owl-item:nth-child(2) .partnership-programs-features__item-body img {
+    bottom: unset;
+    top: 0;
+  }
   .partnership-programs-advantages__list {
     align-items: baseline;
     gap: 0;
@@ -1468,9 +1509,18 @@ img {
     border-radius: 10px;
   }
   .partnership-programs-features__item {
-    height: 369px;
+    height: 400px;
   }
-  .partnership-programs-features__item-body img {
+  .owl-item:nth-child(4) .partnership-programs-features__item-body img {
+    bottom: -20px;
+    width: 90%;
+  }
+  .owl-item:first-child .partnership-programs-features__item-body img,
+.owl-item:last-child .partnership-programs-features__item-body img,
+.owl-item:nth-child(5) .partnership-programs-features__item-body img,
+.owl-item:nth-child(3) .partnership-programs-features__item-body img,
+.owl-item:nth-child(2) .partnership-programs-features__item-body img {
     bottom: 0;
+    top: unset;
   }
 }/*# sourceMappingURL=style.css.map */

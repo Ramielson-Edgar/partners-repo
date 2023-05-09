@@ -526,7 +526,10 @@ img {
     border: 10px solid var(--light);
 }
 
-.partnership-programs-plans__header {@extend %header-margin;}
+.partnership-programs-plans__header {
+    @extend %header-margin;
+}
+
 .partnership-programs-plans__title {
     @extend %h2-header;
 }
@@ -788,9 +791,11 @@ img {
 .partnership-programs-features__item {
     overflow: hidden;
     position: relative;
+
     display: flex;
     flex-direction: column;
-    flex-basis: 365px;
+    flex-basis: 363px;
+
     border: 2px solid #E8ECFF;
     background-color: var(--light);
     border-radius: 20px;
@@ -805,10 +810,38 @@ img {
     }
 }
 
+.partnership-programs-features__item-body {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 160px;
+
+    background-color: var(--blue-100);
+    z-index: 1;
+}
+
+.partnership-programs-features__item-body img {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
 .partnership-programs-features__item-header {
-    padding: 30px 20px 50px;
+    padding: 20px 20px 50px;
     flex-grow: 1;
 }
+
+.partnership-programs-features__item:nth-child(4):hover,
+.partnership-programs-features__item:first-child:hover {
+    box-shadow: 27px 24px 50px -10px rgba(9, 19, 69, 0.2);
+}
+
+
+
 
 .partnership-programs-features__item-list-item:not(:last-child) {
     margin-bottom: 10px;
@@ -841,16 +874,6 @@ img {
 }
 
 
-.partnership-programs-features__item-body {
-    position: relative;
-    background-color: var(--blue-100);
-    min-height: 160px;
-    @include center-flex('all');
-    flex-direction: column;
-
-    z-index: 1;
-}
-
 .partnership-programs-features__item-body::before,
 .partnership-programs-features__item-body::after {
     position: absolute;
@@ -874,11 +897,7 @@ img {
     border: 10px solid rgb(255, 255, 255);
 }
 
-.partnership-programs-features__item-body img {
-    position: absolute;
-    top: -15px;
-    z-index: 2;
-}
+
 
 // performance
 .partnership-programs-performance {
@@ -887,6 +906,7 @@ img {
     background: url('../img/performance-bg.png'), var(--blue-100);
     background-repeat: no-repeat;
     background-position: center center;
+
     border-radius: 30px;
     margin: 10px 10px 0 10px;
     z-index: 1;
@@ -1227,6 +1247,8 @@ img {
 
 @media (max-width:1198px) {
 
+
+
     .partnership-programs-hero__header-title {
         font-size: 40px;
     }
@@ -1274,13 +1296,9 @@ img {
         margin-right: 7px;
     }
 
-    .partnership-programs-features__item-body img {
-        top: 0;
-        bottom: 0;
-    }
 
     .partnership-programs-features__item-header {
-        padding: 30px 30px 60px;
+        padding: 30px;
     }
 
     .partnership-programs-features__item-title {
@@ -1360,15 +1378,14 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .partnership-programs-features__item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
 
     .partnership-programs-features__item-header {
-        flex: 2;
         padding: 30px;
+        flex: 2;
+    }
+
+    .partnership-programs-features__item {
+        flex-direction: row;
     }
 
     .partnership-programs-features__item-body {
@@ -1377,13 +1394,13 @@ img {
     }
 
     .partnership-programs-features__item-body img {
-        top: 40px;
+        left: -20px;
     }
-
 
     .partnership-programs-features__item:nth-child(4) .partnership-programs-features__item-body img {
-        top: 60px;
+        bottom: -30px;
     }
+
 
     .partnership-programs-performance {
         background: url('../img/performance-bg-900.png'), var(--blue-100);
@@ -1480,37 +1497,52 @@ img {
         display: none;
     }
 
+    .partnership-programs-features__item .partnership-programs-features__item-body img {
+        left: 0;
+        width: 80%;
+    }
+
+    .partnership-programs-features__item .partnership-programs-features__item-body {
+        height: 180px;
+        flex: unset;
+    }
+
+    .owl-item:first-child .partnership-programs-features__item-body img {
+        bottom: 6px;
+    }
+
+    .owl-item:nth-child(2) .partnership-programs-features__item-body img {
+        bottom: -6px;
+    }
+
+    .owl-item:nth-child(3) .partnership-programs-features__item-body img {
+        bottom: -19px;
+    }
+
+    .owl-item:last-child .partnership-programs-features__item-body img {
+        bottom: 12px;
+    }
+
+
+
     .partnership-programs-features__item {
         flex-direction: column;
-        align-items: unset;
     }
 
 
 
     .partnership-programs-features__item-header {
         padding: 40px;
+        flex: unset;
     }
 
-    .partnership-programs-features__item {
-        height: 429px;
-    }
-
-
-
-    .partnership-programs-features__item-body img {
-        left: 0;
-        top: -20px;
-        bottom: 0;
-        position: absolute;
-    }
-
-
+    .partnership-programs-features__item:nth-child(4):hover,
+    .partnership-programs-features__item:first-child:hover,
+    .partnership-programs-features__item:focus,
     .partnership-programs-features__item:hover {
         box-shadow: unset;
         transform: unset;
     }
-
-
 
     .partnership-programs-benefits__list {
         flex-direction: column;
@@ -1523,12 +1555,6 @@ img {
     .partnership-programs-benefits__body {
         flex: 1;
         order: 0;
-
-    }
-
-    .owl-carousel-features .owl-carousel .owl-item img {
-        width: 100%;
-        height: 100%;
     }
 
 
@@ -1567,21 +1593,21 @@ img {
 
 @media (max-width:575.98px) {
 
+    .partnership-programs-plans__header {
+        @include center-flex('all');
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .partnership-programs-plans__link {
+        max-width: 100%;
+        margin-inline: unset;
+    }
+
     .partnership-programs-header {
         margin-bottom: 30px;
     }
 
-    .partnership-programs-features__item-body {
-        position: relative;
-
-    }
-
-    .partnership-programs-features__item-body img {
-        left: 0;
-        top: unset;
-        bottom: -10px;
-        position: absolute;
-    }
 
     .partnership-programs-hero {
         background: var(--blue-100);
@@ -1706,7 +1732,7 @@ img {
         margin-bottom: 10px;
     }
 
- 
+
     .partnership-programs-privilege__img-container svg {
         width: 30px;
         height: 30px;
@@ -1775,7 +1801,44 @@ img {
         padding: 20px 20px 40px 20px;
     }
 
+    .partnership-programs-features__item {
+        justify-content: space-between;
+    }
 
+    .partnership-programs-features__item .partnership-programs-features__item-body {
+        height: 170px;
+    }
+
+    .owl-item:first-child .partnership-programs-features__item-body img {
+        top: -20px;
+        bottom: unset;
+    }
+
+    .owl-item:last-child .partnership-programs-features__item-body img {
+        top: -25px;
+        bottom: unset;
+    }
+
+    .owl-item:nth-child(5) .partnership-programs-features__item-body img {
+        top: -20px;
+        bottom: unset;
+    }
+
+    .owl-item:nth-child(3) .partnership-programs-features__item-body img {
+        bottom: unset;
+        top: 0;
+    }
+
+    .owl-item:nth-child(4) .partnership-programs-features__item-body img {
+        bottom: -10px;
+        top: unset;
+
+    }
+
+    .owl-item:nth-child(2) .partnership-programs-features__item-body img {
+        bottom: unset;
+        top: 0;
+    }
 
 
     .partnership-programs-advantages__list {
@@ -1834,10 +1897,20 @@ img {
 
 
     .partnership-programs-features__item {
-        height: 369px;
+        height: 400px;
     }
 
-    .partnership-programs-features__item-body img {
+    .owl-item:nth-child(4) .partnership-programs-features__item-body img {
+        bottom: -20px;
+        width: 90%;
+    }
+
+    .owl-item:first-child .partnership-programs-features__item-body img,
+    .owl-item:last-child .partnership-programs-features__item-body img,
+    .owl-item:nth-child(5) .partnership-programs-features__item-body img,
+    .owl-item:nth-child(3) .partnership-programs-features__item-body img,
+    .owl-item:nth-child(2) .partnership-programs-features__item-body img {
         bottom: 0;
+        top: unset;
     }
 }
