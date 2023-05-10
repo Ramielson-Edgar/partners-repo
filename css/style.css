@@ -102,15 +102,15 @@ img {
   border: 1px solid var(--red-300);
 }
 
-.btn-blue-red {
+.btn-blue-green {
   background-color: transparent;
   color: var(--blue-500);
   border: 1px solid var(--blue-500);
 }
-.btn-blue-red:hover, .btn-blue-red:focus {
+.btn-blue-green:hover, .btn-blue-green:focus {
   color: var(--light);
-  background-color: var(--red-300);
-  border: 1px solid var(--red-300);
+  background-color: var(--green-500);
+  border: 1px solid var(--green-500);
 }
 
 .btn-light-blue {
@@ -554,33 +554,33 @@ img {
   transform: unset;
 }
 
-.partnership-programs-plans__btn-container > .btn-blue-red {
+.partnership-programs-plans__btn-container .btn-blue-green {
   margin-right: 10px;
 }
 
-.partnership-programs-plans__btn-container .btn-blue-red svg {
+.partnership-programs-plans__btn-container .btn-blue-green svg {
   fill: var(--blue-500);
 }
 
-.partnership-programs-plans__btn-container .btn-blue-red.is-active .btn-text {
+.partnership-programs-plans__btn-container .btn-blue-green.is-active .btn-text {
   display: inline-block;
 }
 
-.partnership-programs-plans__btn-container .btn-blue-red.is-active svg {
+.partnership-programs-plans__btn-container .btn-blue-green.is-active svg {
   display: none;
 }
 
-.partnership-programs-plans__btn-container .btn-blue-red:not(.is-active) .btn-text {
+.partnership-programs-plans__btn-container .btn-blue-green:not(.is-active) .btn-text {
   display: none;
 }
 
-.partnership-programs-plans__btn-container .btn-blue-red:focus {
+.partnership-programs-plans__btn-container .btn-blue-green:focus {
   background-color: var(--blue-500);
   color: var(--light);
 }
 
-.partnership-programs-plans__btn-container .btn-blue-red:focus svg,
-.partnership-programs-plans__btn-container .btn-blue-red:hover svg {
+.partnership-programs-plans__btn-container .btn-blue-green:focus svg,
+.partnership-programs-plans__btn-container .btn-blue-green:hover svg {
   fill: var(--light);
 }
 
