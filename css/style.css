@@ -194,7 +194,7 @@ img {
   text-decoration: none;
 }
 
-.partnership-programs-step__item, .partnership-programs-plans__item, .partnership-programs__nav-link::after, .btn-base {
+.partnership-programs-step__item, .partnership-programs-features__item, .partnership-programs-plans__item, .partnership-programs__nav-link::after, .btn-base {
   transition: 0.3s ease-in;
 }
 
@@ -353,6 +353,10 @@ img {
   border-radius: 100%;
   margin-right: 20px;
   background-color: #EEF3FE;
+}
+
+.partnership-programs-award__list.owl-carousel-awards {
+  display: none;
 }
 
 .partnership-programs-award__list {
@@ -665,7 +669,6 @@ img {
   border: 2px solid #E8ECFF;
   background-color: var(--light);
   border-radius: 20px;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 1;
 }
 .partnership-programs-features__item:hover {
@@ -964,7 +967,6 @@ img {
 }
 
 .partnership-programs-step__img-container {
-  margin-bottom: 30px;
   position: relative;
 }
 
@@ -974,6 +976,53 @@ img {
   left: 0;
 }
 
+.partnership-programs-step__img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.partnership-programs-step__progress {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 138px;
+  height: 138px;
+  margin-bottom: 30px;
+}
+
+.partnership-programs-step__progress svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.partnership-programs-step__progress svg {
+  fill: transparent;
+  stroke-width: 5px;
+  stroke: var(--green-500);
+  stroke-dasharray: 428;
+  stroke-dashoffset: 428;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes progress {
+  to {
+    stroke-dashoffset: var(--target);
+  }
+}
+
+@keyframes progress {
+  to {
+    stroke-dashoffset: var(--target);
+  }
+}
 .owl-carousel-plans .owl-item.active {
   overflow: hidden;
   border-radius: 20px;
@@ -1127,7 +1176,7 @@ img {
   }
   .partnership-programs-performance {
     background: url("../img/performance-bg-900.png"), var(--blue-100);
-    background-position: center top;
+    background-position: center top -50px;
     background-repeat: no-repeat;
   }
   .partnership-programs-privilege__list {
@@ -1266,8 +1315,19 @@ img {
   .partnership-programs-benefits__item:not(:last-child) {
     margin-right: unset;
   }
+  .partnership-programs-benefits__body-text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .partnership-programs-performance {
+    background-size: 900px;
+  }
 }
 @media (max-width: 575.98px) {
+  .partnership-programs-benefits__item-header img {
+    position: relative;
+    right: 20px;
+  }
   .partnership-programs-plans__header {
     display: flex;
     justify-content: center;
@@ -1304,12 +1364,33 @@ img {
     text-align: center;
   }
   .partnership-programs-award__list {
+    display: none;
+  }
+  .partnership-programs-award__list.owl-carousel-awards {
+    display: block;
+  }
+  .partnership-programs-award__list {
     grid-template-columns: 1fr;
     max-width: 320px;
     margin-inline: auto;
   }
+  .partnership-programs-award__body-title {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  .partnership-programs-award__item:last-child .partnership-programs-award__body {
+    padding-left: 10px;
+  }
+  .partnership-programs-award__img-container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
   .partnership-programs-award__item {
-    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 270px auto;
+    row-gap: 10px;
   }
   .partnership-programs-award__body {
     height: 100px;
@@ -1346,7 +1427,6 @@ img {
 .partnership-programs-step__body-text,
 .partnership-programs-privilege__body-text,
 .partnership-programs-privilege__header-description,
-.partnership-programs-benefits__body-text,
 .partnership-programs-performance__header-description,
 .partnership-programs-features__item-list-text,
 .card-body-description,
@@ -1355,9 +1435,8 @@ img {
     font-size: 0.813rem;
     line-height: 20px;
   }
-  .partnership-programs-step__img-container svg {
-    width: 50px;
-    height: 50px;
+  .partnership-programs-award__body-name {
+    font-size: 9px;
   }
   .partnership-programs-step__item {
     padding: 15px;
@@ -1368,15 +1447,25 @@ img {
   .partnership-programs-banner__header-title {
     font-size: 20px;
   }
-  .partnership-programs-step__item {
-    align-items: flex-start;
-  }
   .partnership-programs-step__img-container-title {
     display: none;
   }
   .partnership-programs-step__img-container {
     margin-right: 10px;
     margin-bottom: 10px;
+  }
+  .partnership-programs-step__progress {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 0;
+  }
+  .partnership-programs-step__progress svg {
+    stroke-dasharray: 271;
+    stroke-dashoffset: 271;
+  }
+  .partnership-programs-step__progress .icon-step {
+    width: auto;
+    height: 40px;
   }
   .partnership-programs-privilege__img-container svg {
     width: 30px;
@@ -1398,7 +1487,7 @@ img {
     padding: 20px;
   }
   .partnership-programs-banner__wrapper {
-    padding: 30px;
+    padding: 20px 20px 0 20px;
   }
   .partnership-programs-banner__wrapper {
     background-position: center center;
@@ -1481,9 +1570,12 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .partnership-programs-performance__header {
+    margin-top: 30px;
+  }
   .partnership-programs-performance {
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-position: center top -30px;
+    background-size: 690px;
   }
   .partnership-programs-performance::after {
     width: 100px;
@@ -1513,10 +1605,21 @@ img {
   }
   .owl-item:first-child .partnership-programs-features__item-body img,
 .owl-item:last-child .partnership-programs-features__item-body img,
-.owl-item:nth-child(5) .partnership-programs-features__item-body img,
-.owl-item:nth-child(3) .partnership-programs-features__item-body img,
-.owl-item:nth-child(2) .partnership-programs-features__item-body img {
+.owl-item:nth-child(5) .partnership-programs-features__item-body img {
     bottom: 0;
     top: unset;
+  }
+  .owl-item:nth-child(2) .partnership-programs-features__item-body img,
+.owl-item:nth-child(3) .partnership-programs-features__item-body img {
+    bottom: -14px;
+    top: unset;
+  }
+  .partnership-programs-benefits__item-header img {
+    right: -20px;
+    bottom: -20px;
+  }
+  .partnership-programs-performance {
+    background-position: center top 10px;
+    background-size: 360px;
   }
 }/*# sourceMappingURL=style.css.map */
