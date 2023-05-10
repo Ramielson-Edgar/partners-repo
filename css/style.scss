@@ -336,7 +336,7 @@ img {
     overflow: hidden;
     background: url('../img/hand-vertical.png'), url('../img/hand-2.png') var(--blue-100);
     background-repeat: no-repeat, no-repeat;
-    background-position: bottom center, center right -350px;
+    background-position: bottom center, top -100px right -350px;
 
     margin: 10px;
     border-radius: 30px;
@@ -861,6 +861,7 @@ img {
     @include center-flex('all');
     flex-direction: column;
     margin-right: 10px;
+    transform: rotate(270deg);
 }
 
 .partnership-programs-features__item-img-container svg {
@@ -1488,6 +1489,11 @@ img {
         margin-right: unset;
     }
 
+    .partnership-programs-step__img-container {
+        flex-direction: row;
+    }
+
+
     .partnership-programs-step__item:not(:last-child) {
         margin-bottom: 10px;
     }
@@ -1631,8 +1637,6 @@ img {
         margin-right: unset;
     }
 
- 
-
 
     .partnership-programs-benefits__body-text {
         font-size: 13px;
@@ -1643,6 +1647,7 @@ img {
         background-size: 900px;
     }
 
+   
 
 }
 

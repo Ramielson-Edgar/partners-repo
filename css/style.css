@@ -267,7 +267,7 @@ img {
   overflow: hidden;
   background: url("../img/hand-vertical.png"), url("../img/hand-2.png") var(--blue-100);
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom center, center right -350px;
+  background-position: bottom center, top -100px right -350px;
   margin: 10px;
   border-radius: 30px;
   z-index: 1;
@@ -728,6 +728,7 @@ img {
   align-items: center;
   flex-direction: column;
   margin-right: 10px;
+  transform: rotate(270deg);
 }
 
 .partnership-programs-features__item-img-container svg {
@@ -1211,6 +1212,9 @@ img {
     text-align: left;
     align-items: center;
     margin-right: unset;
+  }
+  .partnership-programs-step__img-container {
+    flex-direction: row;
   }
   .partnership-programs-step__item:not(:last-child) {
     margin-bottom: 10px;
