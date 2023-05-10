@@ -267,7 +267,7 @@ img {
   overflow: hidden;
   background: url("../img/hand-vertical.png"), url("../img/hand-2.png") var(--blue-100);
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom center, top -100px right -350px;
+  background-position: bottom center, top right -200px;
   margin: 10px;
   border-radius: 30px;
   z-index: 1;
