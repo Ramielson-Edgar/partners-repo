@@ -1040,6 +1040,125 @@ img {
   background: var(--blue-800);
 }
 
+.partnership-programs-footer {
+  color: var(--light);
+  background-color: var(--dark-500);
+}
+
+.footer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.footer-contacts,
+.social-media,
+.footer-links,
+.footer-list,
+.footer-terms,
+.footer-company,
+.footer-contacts__item {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-title {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.footer-links__link {
+  display: block;
+  font-size: 0.813rem;
+  color: hsla(0deg, 0%, 100%, 0.5);
+  transition: all 0.3s ease-in;
+}
+
+.footer-links__link:hover,
+.footer-links__link:focus {
+  color: var(--blue-700);
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  max-width: 240px;
+  margin-top: 20px;
+}
+
+.social-media__link svg {
+  fill: #6b6b6b;
+}
+
+.social-media__link svg,
+.footer-contacts__link svg {
+  transition: fill 0.3s ease-in;
+}
+
+.social-media__link:hover svg {
+  fill: var(--light);
+}
+
+.footer-contacts__link {
+  fill: var(--light);
+  color: var(--light);
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+.footer-contacts__link:hover {
+  color: var(--blue-700);
+  transition: all 0.3s ease-in;
+}
+
+.footer-contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 0.813rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-contacts__link:hover svg {
+  fill: var(--blue-700);
+}
+
+.footer-company__item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.footer-separator {
+  background-color: #939393;
+}
+
+.footer-terms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-terms__link {
+  color: var(--light);
+}
+
+.footer-hr {
+  border-top: 1px solid rgba(147, 147, 147, 0.253);
+  padding: 40px 0;
+}
+
+.footer-terms.footer-hr {
+  border-bottom: 1px solid rgba(147, 147, 147, 0.253);
+  border-top: unset;
+}
+
 @media (min-width: 1440.98px) {
   .partnership-programs-hero {
     background: url("../img/had-1920.png"), url("../img/hand-2-90deg.png"), var(--blue-100);
@@ -1316,6 +1435,9 @@ img {
   }
 }
 @media (max-width: 575.98px) {
+  .footer-company__item {
+    grid-template-columns: 1fr;
+  }
   .partnership-programs-benefits__item-header img {
     position: relative;
     right: 20px;
