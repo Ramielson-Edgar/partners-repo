@@ -1159,6 +1159,10 @@ img {
   border-top: unset;
 }
 
+.footer-terms__link:hover {
+  color: var(--blue-700);
+}
+
 @media (min-width: 1440.98px) {
   .partnership-programs-hero {
     background: url("../img/had-1920.png"), url("../img/hand-2-90deg.png"), var(--blue-100);
