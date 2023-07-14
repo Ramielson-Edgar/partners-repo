@@ -207,10 +207,19 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1133.91 477.818C1129.95 688.039 987.844 863.236 795.812 918.452L1069.03 231.113C1111.76 303.271 1135.61 387.814 1133.91 477.818Z" fill="#BFBFBF"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M256.216 245.068C226.36 296.483 206.305 353.754 198.399 414.451L-73 811.035L198.918 535.443C204.541 576.059 215.556 614.941 231.227 651.432L230.871 651.609L78.9355 887.002L258.986 705.722C275.91 734.001 295.819 760.376 318.285 784.467L226.591 937.291L345.785 811.654C373.594 837.008 404.508 859.201 437.894 877.666L389.226 998.279L480.332 898.534C503.317 908.493 527.238 916.774 551.922 923.222L256.216 245.068Z" fill="#BFBFBF"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M264.272 232.153L767.388 231.112L732.598 362.578H579.306V435.374H706.506L670.629 563.581H622.793L681.501 728.729L851.101 231.112H1069.88L1073.55 237.53L798.605 916.41C756.991 928.608 712.967 935.151 667.42 935.151C626.264 935.151 586.354 929.809 548.34 919.78L256.3 246.404C258.876 241.603 261.534 236.852 264.272 232.153Z" fill="#E9E9E9"/>
- 
- 
 </symbol>
 
 
+<svg id="icon-menu" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+<path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+<path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+<svg id="icon-close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Menu / Close_SM">
+<path id="Vector" d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
 </defs>
 </svg>

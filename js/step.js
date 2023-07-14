@@ -2,6 +2,7 @@ const firstStep = document.querySelector('.partnership-programs-step__img-contai
 const progressBar = document.querySelectorAll('.partnership-programs-step__progress svg circle');
 const stepCounters =document.querySelectorAll('.step-counter');
 
+
 window.addEventListener('scroll',stepCounter)
 
 function hasReached (el) {
@@ -31,3 +32,6 @@ function stepCounter () {
     } )
     progressBar.forEach((el )=> (el.style.animation = "progress 2s ease-in-out forwards"))
 }
+
+
+ 
