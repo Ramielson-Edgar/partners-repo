@@ -813,8 +813,8 @@ img {
     z-index: 1;
 
     &:hover {
-        transform: translateY(-20px);
-        box-shadow: -27px 24px 50px -10px rgba(9, 19, 69, 0.2);
+        transform: translateY(-8px);
+        box-shadow: -27px 24px 50px -10px rgba(9, 19, 69, 0.150);
         z-index: 2;
     }
 }
@@ -846,7 +846,7 @@ img {
 
 .partnership-programs-features__item:nth-child(4):hover,
 .partnership-programs-features__item:first-child:hover {
-    box-shadow: 27px 24px 50px -10px rgba(9, 19, 69, 0.2);
+    box-shadow: 27px 24px 50px -10px rgba(9, 19, 69, 0.150);
 }
 
 
