@@ -1508,6 +1508,12 @@ img {
   }
 }
 @media (max-width: 575.98px) {
+  .partnership-programs-hero {
+    margin: 0;
+  }
+  .partnership-programs-hero.section-padding {
+    padding: 50px 10px;
+  }
   .footer-company__item {
     grid-template-columns: 1fr;
   }
@@ -1525,15 +1531,13 @@ img {
     max-width: 100%;
     margin-inline: unset;
   }
-  .partnership-programs-header {
-    margin-bottom: 30px;
-  }
   .partnership-programs-hero {
     background: var(--blue-100);
   }
   .partnership-programs-hero.circles::before {
-    top: -50px;
-    right: -50px;
+    top: 10px;
+    left: -240px;
+    right: unset;
     bottom: unset;
   }
   .partnership-programs-hero__header-title {
